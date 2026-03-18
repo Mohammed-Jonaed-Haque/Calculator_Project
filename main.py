@@ -31,9 +31,9 @@ def calculator():
     while user_still_wants_to_input:
         for symbol in calculator_dictionary:
             print(symbol)   #<--- prints out the "keys" in the dictionary.
-        input_sign = input("Enter  the operation sign you want to do --> '+',  '-',  '*',  '/': ")
+        enter_symbol = input("Enter  the operation sign you want to do --> '+',  '-',  '*',  '/': ")
         second_number = float(input("Enter the second number you want to calculate: "))
-        answer = calculator_dictionary[input_sign](first_number, second_number) #<--- it does the main calculations
+        answer = calculator_dictionary[enter_symbol](first_number, second_number) #<--- it does the main calculations
         print(f"The answer is: {answer}")
         user_want_to_continue = input(f"enter 'y' if you want to continue the calculation with {answer}, or type 'n' to start a new calculation: ")
         if user_want_to_continue == 'y':
